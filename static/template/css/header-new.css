@@ -313,7 +313,11 @@
     }
 }
 
-/* Adjust body padding since header is no longer fixed */
+/* Adjust body padding and content margin since header is no longer fixed */
 body {
     padding-top: 0 !important;
+}
+
+.content {
+    margin-top: 0 !important;
 }
