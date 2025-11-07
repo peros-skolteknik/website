@@ -4,27 +4,27 @@
             <div class="header-logo">
                 <a href="{{ "/" | relURL }}"><img src="{{ "template/images/logotyp.png" | relURL }}" alt="Peros Skolteknik"></a>
             </div>
-            <div class="header-menu">
-                <nav class="navbar" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"><i class="fa fa-bars"></i> Meny</button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                        <ul class="navbar-mobile-buttons">
-                            <li><a class="phone" href="tel:{{ .Site.Params.phone }}"><i class="fa fa-phone"></i> Ring oss</a></li>
-                            <li><a class="email" href="mailto:{{ .Site.Params.email }}"><i class="fa fa-envelope"></i> E-mail</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right-menu">
-                            {{- $currentPage := . -}}
-                            {{- range .Site.Menus.main -}}
-                            <li class="page_item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active current current_page_item{{ end }}">
-                                <a href="{{ .URL }}" class="nav-link" data-title="{{ .Name }}">{{ .Name }}</a>
-                            </li>
-                            {{- end -}}
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <nav class="navbar header-menu" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                        <i class="fa fa-bars"></i> Meny
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    <ul class="navbar-mobile-buttons">
+                        <li><a class="phone" href="tel:{{ .Site.Params.phone }}"><i class="fa fa-phone"></i>Ring oss</a></li>
+                        <li><a class="email" href="mailto:{{ .Site.Params.email }}"><i class="fa fa-envelope"></i>E-mail</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right-menu">
+                        {{- $currentPage := . -}}
+                        {{- range .Site.Menus.main -}}
+                        <li class="page_item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active current current_page_item{{ end }}">
+                            <a href="{{ .URL }}" class="nav-link" data-title="{{ .Name }}">{{ .Name }}</a>
+                        </li>
+                        {{- end -}}
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
 </div>
