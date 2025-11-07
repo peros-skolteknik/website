@@ -18,9 +18,22 @@
                     <ul class="nav navbar-nav navbar-right-menu">
                         {{- $currentPage := . -}}
                         {{- range .Site.Menus.main -}}
+                        {{- if .HasChildren -}}
+                        <li class="page_item dropdown {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active current current_page_item{{ end }}">
+                            <a href="{{ .URL }}" class="nav-link dropdown-toggle" data-title="{{ .Name }}">
+                                {{ .Name }} <i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                {{- range .Children -}}
+                                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                {{- end -}}
+                            </ul>
+                        </li>
+                        {{- else -}}
                         <li class="page_item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active current current_page_item{{ end }}">
                             <a href="{{ .URL }}" class="nav-link" data-title="{{ .Name }}">{{ .Name }}</a>
                         </li>
+                        {{- end -}}
                         {{- end -}}
                     </ul>
                 </div>

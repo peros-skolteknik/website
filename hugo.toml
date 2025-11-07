@@ -22,41 +22,51 @@ disableKinds = ["taxonomy", "term"]
   weight = 2
 
 [[menu.main]]
+  name = "Tips"
+  url = "#"
+  weight = 3
+
+[[menu.main]]
   name = "Månadens tips"
   url = "/manadens-tips/"
-  weight = 3
+  parent = "Tips"
+  weight = 1
 
 [[menu.main]]
   name = "Tekniklänkar"
   url = "/tekniklankar/"
-  weight = 4
+  parent = "Tips"
+  weight = 2
 
 [[menu.main]]
   name = "Gratis läromedel & tips"
   url = "/gratis-laromedel--tips/"
-  weight = 5
+  parent = "Tips"
+  weight = 3
 
 [[menu.main]]
   name = "Rörliga mekanismer"
   url = "/rorliga-mekanismer/"
-  weight = 6
-
-[[menu.main]]
-  name = "Miniräknare"
-  url = "/miniraknare/"
-  weight = 7
-
-[[menu.main]]
-  name = "Villkor & information"
-  url = "/villkor--information/"
-  weight = 8
-
-[[menu.main]]
-  name = "Kontakt"
-  url = "/kontakt/"
-  weight = 9
+  parent = "Tips"
+  weight = 4
 
 [[menu.main]]
   name = "Programmering"
   url = "/programmering/"
-  weight = 10
+  parent = "Tips"
+  weight = 5
+
+[[menu.main]]
+  name = "Miniräknare"
+  url = "/miniraknare/"
+  weight = 4
+
+[[menu.main]]
+  name = "Villkor & information"
+  url = "/villkor--information/"
+  weight = 5
+
+[[menu.main]]
+  name = "Kontakt"
+  url = "/kontakt/"
+  weight = 6
