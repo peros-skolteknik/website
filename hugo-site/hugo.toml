@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://skolteknik.com/"
 languageCode = "sv-se"
 title = "Peros Skolteknik AB"
 disableKinds = ["taxonomy", "term"]
