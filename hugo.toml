@@ -22,9 +22,24 @@ disableKinds = ["taxonomy", "term"]
   weight = 2
 
 [[menu.main]]
+  name = "Miniräknare"
+  url = "/miniraknare/"
+  weight = 3
+
+[[menu.main]]
+  name = "Villkor & information"
+  url = "/villkor--information/"
+  weight = 4
+
+[[menu.main]]
+  name = "Kontakt"
+  url = "/kontakt/"
+  weight = 5
+
+[[menu.main]]
   name = "Tips"
   url = "#"
-  weight = 3
+  weight = 6
 
 [[menu.main]]
   name = "Månadens tips"
@@ -56,17 +71,4 @@ disableKinds = ["taxonomy", "term"]
   parent = "Tips"
   weight = 5
 
-[[menu.main]]
-  name = "Miniräknare"
-  url = "/miniraknare/"
-  weight = 4
 
-[[menu.main]]
-  name = "Villkor & information"
-  url = "/villkor--information/"
-  weight = 5
-
-[[menu.main]]
-  name = "Kontakt"
-  url = "/kontakt/"
-  weight = 6
