@@ -1,0 +1,36 @@
+<div class="header clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div id="site-logo">
+                    <a href="{{ "/" | relURL }}"><img src="{{ "template/images/logotyp.png" | relURL }}" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="header-right clearfix">
+                    <div class="main-navigation animated">
+                        <nav class="navbar" role="navigation">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"><i class="fa fa-navicon"></i> Meny</button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                                <ul class="navbar-mobile-buttons">
+                                    <li><a class="phone" href="tel:0855171800"><i class="fa fa-tty"></i> Ring oss</a></li>
+                                    <li><a class="email" href="mailto:peros@skolteknik.com"><i class="fa fa-paper-plane"></i> E-mail</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-center">
+                                    {{- $currentPage := . -}}
+                                    {{- range .Site.Menus.main -}}
+                                    <li class="page_item {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active current current_page_item{{ end }}">
+                                        <a href="{{ .URL }}" class="nav-link" data-title="{{ .Name }}">{{ .Name }}</a>
+                                    </li>
+                                    {{- end -}}
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

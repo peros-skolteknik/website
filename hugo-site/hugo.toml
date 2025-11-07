@@ -1,0 +1,62 @@
+baseURL = "/"
+languageCode = "sv-se"
+title = "Peros Skolteknik AB"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Peros Skolteknik AB"
+  keywords = "Peros Skolteknik AB, peros, skolteknik, programmering skola, miniräknare peros"
+  phone = "0101385419"
+  email = "peros@skolteknik.com"
+  address = "Dillnäsby 3<br>646 93 Gnesta"
+  footerDescription = "Peros Skolteknik har funnits sedan 80-talet och drivs idag av kunniga teknik- och matte-lärare. Vi har lång erfarenhet av teknikundervisning och är specialiserade på läromedel inom praktisk och teoretisk undervisning."
+
+[[menu.main]]
+  name = "Företaget"
+  url = "/foretaget/"
+  weight = 1
+
+[[menu.main]]
+  name = "Teknikmaterial"
+  url = "/teknikmaterial/"
+  weight = 2
+
+[[menu.main]]
+  name = "Månadens tips"
+  url = "/manadens-tips/"
+  weight = 3
+
+[[menu.main]]
+  name = "Tekniklänkar"
+  url = "/tekniklankar/"
+  weight = 4
+
+[[menu.main]]
+  name = "Gratis läromedel & tips"
+  url = "/gratis-laromedel--tips/"
+  weight = 5
+
+[[menu.main]]
+  name = "Rörliga mekanismer"
+  url = "/rorliga-mekanismer/"
+  weight = 6
+
+[[menu.main]]
+  name = "Miniräknare"
+  url = "/miniraknare/"
+  weight = 7
+
+[[menu.main]]
+  name = "Villkor & information"
+  url = "/villkor--information/"
+  weight = 8
+
+[[menu.main]]
+  name = "Kontakt"
+  url = "/kontakt/"
+  weight = 9
+
+[[menu.main]]
+  name = "Programmering"
+  url = "/programmering/"
+  weight = 10
