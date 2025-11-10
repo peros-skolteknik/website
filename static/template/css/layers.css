@@ -1,3 +1,0 @@
-/* CSS Layer Order Declaration */
-/* Layers are applied in order - later layers have higher priority */
-@layer bootstrap, font-awesome, animate, vendor, main;

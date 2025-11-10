@@ -11,14 +11,12 @@
 		<meta name="keywords" content="{{ .Params.keywords | default .Site.Params.keywords }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="{{ "files/logotyp.png" | relURL }}">
-		<link rel="stylesheet" href="{{ "template/css/layers.css" | relURL }}">
-		<style>
-@import url("{{ "dom0/plugins/Frameworks/bootstrap/3.3.7/css/bootstrap.min.css" | relURL }}") layer(bootstrap);
-@import url("{{ "dom0/plugins/Fonts/font-awesome/4.7.0/css/font-awesome.min.css" | relURL }}") layer(font-awesome);
-@import url("{{ "dom0/plugins/Effects/animate/animate.css" | relURL }}") layer(animate);
-@import url("{{ "dom0/plugins/Vendor/cms2/core.css" | relURL }}") layer(vendor);
-		</style>
+		<link rel="stylesheet" href="{{ "dom0/plugins/Frameworks/bootstrap/3.3.7/css/bootstrap.min.css" | relURL }}" />
+		<link rel="stylesheet" href="{{ "dom0/plugins/Fonts/font-awesome/4.7.0/css/font-awesome.min.css" | relURL }}" />
+		<link rel="stylesheet" href="{{ "dom0/plugins/Effects/animate/animate.css" | relURL }}" />
+		<link rel="stylesheet" href="{{ "dom0/plugins/Vendor/cms2/core.css" | relURL }}" />
 		<link rel="stylesheet" href="{{ "template/css/main.css" | relURL }}">
+		<link rel="stylesheet" href="{{ "template/css/header-new.css" | relURL }}">
 		{{ if .Params.customStyle }}
 		<style>
 {{ .Params.customStyle | safeCSS }}

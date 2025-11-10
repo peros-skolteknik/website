@@ -5,6 +5,7 @@ keywords: "Peros Skolteknik AB, peros, skolteknik, programmering skola, miniräk
 customStyle: |
   .content img {padding: 0;}
   .content {margin: 0;}
+  .header {width: 100%; padding: 20px 0; background: transparent; z-index: 700; position: fixed; top: 0; float: left; moz-transition: all .5s; -webkit-transition: all .5s; -o-transition: all .5s; -ms-transition: all .5s; transition: all .5s; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
   #Welcome {
       background: url('/files/backgrounds/background_welcome.jpg');
       background-size: cover;
@@ -12,6 +13,17 @@ customStyle: |
   }
   #Banner h2{
       color:#fff;
+  }
+  .navbar-nav li a {color: #000; font-weight: 700; font-size: 1rem; line-height: 35px; border-bottom: 3px solid transparent; margin: 10px 16px; padding: 0; -webkit-transition: none; -o-transition: none; transition: none; text-decoration: none;}
+  @media (max-width: 767px) {
+      .header {
+          position: static;
+      }
+      .navbar-nav li a {
+          margin: 0;
+          padding: 15px;
+          color: #FFF;
+      }
   }
 ---
 
